@@ -1,21 +1,25 @@
-//객체
-let codeit = {
- 'n ame': '코드잇',
- bornYear: 2017,
- isVeryNice: true,
-  worstCourse: null,
-  bestCourse: {
-    title: '자바스크립트 프로그래밍 기초',
-    language: 'JavaScript'
-  }
-};
+let myVoca={
+  addVoca: function (key, value){
+    myVoca[key] = value;
+  },
+  deleteVoca: function(key) {
+    delete myVoca[key];
+  },
+  printVoca: function (key){
+    console.log(`"${key}"의 뜻은 "${myVoca[key]}"입니다.`);
+  }, 
+  };
 
-//점 표기법
-console.log(codeit.bornYear);
+//add Voca 메소드 코드
+  myVoca.addVoca('parameter', '매개 변수');
+  myVoca.addVoca('element', '요소');
+  myVoca.addVoca('property', '속성');
+  console.log(myVoca);
 
-//대괄호 표기법
-console.log (codeit['n ame']);
+//deleteVoca 메소드 코드
+  myVoca.deleteVoca('parameter');
+  myVoca.deleteVoca('element');
+  console.log(myVoca);
 
-//복잡한 객체 표기법
-console.log(codeit.bestCourse.title);
-
+//printVoca 메소드 코드
+  myVoca.printVoca('property');

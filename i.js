@@ -1,25 +1,13 @@
-let myVoca={
-  addVoca: function (key, value){
-    myVoca[key] = value;
-  },
-  deleteVoca: function(key) {
-    delete myVoca[key];
-  },
-  printVoca: function (key){
-    console.log(`"${key}"의 뜻은 "${myVoca[key]}"입니다.`);
-  }, 
-  };
+//for..in
+let codeit = {
+  name: '코드잇',
+  bornYear: 2017,
+  isVeryNice: true,
+  worstCourse: null,
+  bestCourse: '자바스크립트 프로그래밍 기초'
+}
 
-//add Voca 메소드 코드
-  myVoca.addVoca('parameter', '매개 변수');
-  myVoca.addVoca('element', '요소');
-  myVoca.addVoca('property', '속성');
-  console.log(myVoca);
-
-//deleteVoca 메소드 코드
-  myVoca.deleteVoca('parameter');
-  myVoca.deleteVoca('element');
-  console.log(myVoca);
-
-//printVoca 메소드 코드
-  myVoca.printVoca('property');
+for(let k in codeit) {
+  console.log(k);
+  console.log(codeit[k]);
+}

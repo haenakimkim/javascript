@@ -1,13 +1,8 @@
-//for..in
-let codeit = {
-  name: '코드잇',
-  bornYear: 2017,
-  isVeryNice: true,
-  worstCourse: null,
-  bestCourse: '자바스크립트 프로그래밍 기초'
-}
+//시간
 
-for(let k in codeit) {
-  console.log(k);
-  console.log(codeit[k]);
-}
+let myDate =new Date();
+
+console.log(myDate.toLocaleDateString());
+console.log(myDate.toLocaleTimeString());
+console.log(myDate.toLocaleString());
+

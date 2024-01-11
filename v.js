@@ -1,15 +1,14 @@
-const rank = ['효준','유나','민환','재하'];
+//try cathc문
+try{
+console.log('에러전');
 
-//const macbook =rank[0];
-//const ipad= rank[1];
-//const airpods=rank[2];
-//const coupon= rank [3];
+const codeit = '코드잇';
+console.log (codeit)
 
-const[macbook, ipad, airpods, coupon] =rank;
+codeit = 'codeit';
 
-console.log (macbook);
-console.log(ipad);
-console.log(airpods);
-console.log(coupon);
-
-
+const language = 'JavasScript';
+console.log (language);
+}catch(error) {
+console.log('에러후')
+}

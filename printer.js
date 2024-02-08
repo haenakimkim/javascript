@@ -1,5 +1,5 @@
-export const title = "CodeitPrinter";
+export const title = 'CodeitPrinter';
 
-export function print(value) {
-  console.log(value)
+export functon print (value){
+  console.log(value);
 }
